@@ -1,0 +1,35 @@
+---
+title: "Analytics Project Template"
+author: "Emerson COMRES"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output: 
+  html_document:
+    theme: cerulean
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+## Setting RMD Project Directory
+Project_Folder = rprojroot::find_rstudio_root_file()
+knitr::opts_knit$set(root.dir = Project_Folder)
+
+## Loading / Updating COMRES Data Science Package
+
+library(EmersonDataScience)
+
+## Loading and Installing Packages if necessacary
+Required_Packages = c('tidyverse','installr','lubridate','recipes','scales','ggthemes')
+load_or_install(Required_Packages)
+
+## Loading Required Functions
+sourceDir(paste0(Project_Folder,"/Codes/Functions"))
+```
+
+
+## Data Description
+
+```{r}
+
+```
+

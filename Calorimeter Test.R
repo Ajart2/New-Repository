@@ -212,3 +212,6 @@ print(eta_I)
 
 print("Power Factor", quote = FALSE)
 print(PF, quote = FALSE)
+
+
+#Try to concatenate these strings.
